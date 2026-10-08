@@ -32,6 +32,10 @@ a:focus {
 /*Write selector/rule property to add the background image to the first div in the grid and place it in the grid. */
 .container div:first-child {
      background-image: url('../images/header.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: scroll;
      grid-column: 1 / -1;
 } 
 
@@ -64,8 +68,10 @@ a:focus {
 .accounts-image, .onlinebanking-image, .security-image, .loans-image, .contact-image {
      grid-column: 1 / -1;
      max-height: 675px;
+     width:auto;
      display: flex;
      justify-content: center;
+     overflow: hidden;
 }  
 
 .accounts-image {
